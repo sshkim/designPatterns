@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Strategy.Duck</OriginalElement>
+  <nodes>
+    <node x="135.99999999999994" y="156.5">Strategy.FlyNoWay</node>
+    <node x="263.0" y="101.0">Strategy.Duck</node>
+    <node x="507.0" y="156.5">Strategy.MuteQuack</node>
+    <node x="134.625" y="0.0">Strategy.FlyBehavior</node>
+    <node x="0.0" y="156.5">Strategy.FlyWithWings</node>
+    <node x="656.0" y="156.5">Strategy.Quack</node>
+    <node x="505.625" y="0.0">Strategy.QuackBehavior</node>
+    <node x="293.5" y="313.0">Strategy.MallardDuck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Strategy.Duck" target="Strategy.FlyBehavior">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Strategy.MuteQuack" target="Strategy.QuackBehavior">
+      <point x="0.0" y="-25.5" />
+      <point x="571.5" y="76.0" />
+      <point x="570.125" y="76.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Strategy.MallardDuck" target="Strategy.Duck">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="Strategy.Quack" target="Strategy.QuackBehavior">
+      <point x="0.0" y="-25.5" />
+      <point x="720.5" y="76.0" />
+      <point x="613.125" y="76.0" />
+      <point x="43.0" y="25.5" />
+    </edge>
+    <edge source="Strategy.FlyWithWings" target="Strategy.FlyBehavior">
+      <point x="0.0" y="-25.5" />
+      <point x="58.0" y="76.0" />
+      <point x="152.45833333333334" y="76.0" />
+      <point x="-35.66666666666666" y="25.5" />
+    </edge>
+    <edge source="Strategy.MallardDuck" target="Strategy.FlyWithWings">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Strategy.MallardDuck" target="Strategy.Quack">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Strategy.FlyNoWay" target="Strategy.FlyBehavior">
+      <point x="0.0" y="-25.5" />
+      <point x="189.49999999999994" y="76.0" />
+      <point x="188.125" y="76.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Strategy.Duck" target="Strategy.QuackBehavior">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="393.0" y="194.0" />
+  <SelectedNodes>
+    <node>Strategy.Duck</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
