@@ -1,3 +1,8 @@
+import Behavioral.Command.*;
+import Behavioral.Iterator.DinerMenu;
+import Behavioral.Iterator.Menu;
+import Behavioral.Iterator.PanCakeHouseMenu;
+import Behavioral.Iterator.Waitress;
 import Creational.FactoryMethod.ChicagoPizzaStore;
 import Creational.FactoryMethod.NYPizzaStore;
 import Creational.FactoryMethod.Pizza;
@@ -72,6 +77,37 @@ public class Tester {
 
         } catch (Exception e) {
         }
+    }
+
+    @Test
+    public void iteratorPattern(){
+        ArrayList<Menu> menus = new ArrayList();
+        menus.add(new PanCakeHouseMenu());
+        menus.add(new DinerMenu());
+
+        Waitress waitress = new Waitress(menus);
+        waitress.printMenu();
+    }
+
+    @Test
+    public void commandPattern(){
+//        SimpleRemoteControl remote = new SimpleRemoteControl();
+//        Light light = new Light();
+//        LightOnCommand lightOn = new LightOnCommand(light);
+//
+//        remote.setCommand(lightOn);
+//        remote.buttonWasPressed();
+        RemoteControl remoteControl = new RemoteControl();
+        Light livingRoomLight = new Light();
+        LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
+        LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
+
+        remoteControl.setCommands(0, livingRoomLightOn, livingRoomLightOff);
+
+        remoteControl.onButtonWasPushed(0);
+        remoteControl.offButtonWasPushed(0);
+        remoteControl.undoButtonWasPushed();
+
     }
 
 }

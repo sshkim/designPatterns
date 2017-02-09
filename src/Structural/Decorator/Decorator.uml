@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>Decorator</OriginalElement>
+  <OriginalElement>Structural.Decorator</OriginalElement>
   <nodes>
-    <node x="741.0000000000001" y="248.0">Decorator.Whip</node>
-    <node x="247.0000000000001" y="248.0">Decorator.Milk</node>
-    <node x="402.0000000000001" y="135.5">Decorator.CondimentDecorator</node>
-    <node x="494.0000000000001" y="248.0">Decorator.Mocha</node>
-    <node x="732.0000000000001" y="0.0">Decorator.Beverage</node>
-    <node x="0.0" y="248.0">Decorator.Soy</node>
-    <node x="0.0" y="413.0">Decorator.CoffeeStore</node>
-    <node x="726.0000000000001" y="124.0">Decorator.Espresso</node>
-    <node x="586.0000000000001" y="124.0">Decorator.Decaf</node>
-    <node x="1064.0" y="124.0">Decorator.DarkRoast</node>
-    <node x="886.0000000000001" y="124.0">Decorator.HouseBlend</node>
+    <node x="0.0" y="390.0">Structural.Decorator.CoffeeStore</node>
+    <node x="972.75" y="124.0">Structural.Decorator.HouseBlend</node>
+    <node x="206.0" y="248.0">Structural.Decorator.Soy</node>
+    <node x="663.75" y="124.0">Structural.Decorator.Decaf</node>
+    <node x="659.75" y="0.0">Structural.Decorator.Beverage</node>
+    <node x="319.75" y="135.5">Structural.Decorator.CondimentDecorator</node>
+    <node x="627.0" y="248.0">Structural.Decorator.Whip</node>
+    <node x="407.0" y="248.0">Structural.Decorator.Mocha</node>
+    <node x="0.0" y="248.0">Structural.Decorator.Milk</node>
+    <node x="503.75" y="124.0">Structural.Decorator.Espresso</node>
+    <node x="803.75" y="124.0">Structural.Decorator.DarkRoast</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="Decorator.Milk" target="Decorator.CondimentDecorator">
-      <point x="0.0" y="-60.0" />
-      <point x="360.5000000000001" y="228.0" />
-      <point x="463.5000000000001" y="228.0" />
+    <edge source="Structural.Decorator.Espresso" target="Structural.Decorator.Beverage">
+      <point x="0.0" y="-37.0" />
+      <point x="573.75" y="104.0" />
+      <point x="698.15" y="104.0" />
+      <point x="-25.600000000000023" y="37.0" />
+    </edge>
+    <edge source="Structural.Decorator.DarkRoast" target="Structural.Decorator.Beverage">
+      <point x="0.0" y="-37.0" />
+      <point x="878.25" y="104.0" />
+      <point x="749.35" y="104.0" />
+      <point x="25.600000000000023" y="37.0" />
+    </edge>
+    <edge source="Structural.Decorator.Soy" target="Structural.Decorator.CondimentDecorator">
+      <point x="0.0" y="-48.5" />
+      <point x="296.5" y="228.0" />
+      <point x="381.25" y="228.0" />
       <point x="-20.5" y="25.5" />
     </edge>
-    <edge source="Decorator.DarkRoast" target="Decorator.Beverage">
-      <point x="0.0" y="-37.0" />
-      <point x="1138.5" y="94.0" />
-      <point x="847.2000000000002" y="94.0" />
-      <point x="51.200000000000045" y="37.0" />
-    </edge>
-    <edge source="Decorator.Mocha" target="Decorator.CondimentDecorator">
-      <point x="0.0" y="-60.0" />
-      <point x="607.5000000000001" y="228.0" />
-      <point x="504.5000000000001" y="228.0" />
-      <point x="20.5" y="25.5" />
-    </edge>
-    <edge source="Decorator.Espresso" target="Decorator.Beverage">
+    <edge source="Structural.Decorator.Decaf" target="Structural.Decorator.Beverage">
       <point x="0.0" y="-37.0" />
       <point x="0.0" y="37.0" />
     </edge>
-    <edge source="Decorator.Decaf" target="Decorator.Beverage">
-      <point x="0.0" y="-37.0" />
-      <point x="646.0000000000001" y="104.0" />
-      <point x="770.4000000000001" y="104.0" />
-      <point x="-25.600000000000023" y="37.0" />
-    </edge>
-    <edge source="Decorator.Soy" target="Decorator.CondimentDecorator">
-      <point x="0.0" y="-60.0" />
-      <point x="113.5" y="218.0" />
-      <point x="422.5000000000001" y="218.0" />
-      <point x="-61.5" y="25.5" />
-    </edge>
-    <edge source="Decorator.HouseBlend" target="Decorator.Beverage">
-      <point x="0.0" y="-37.0" />
-      <point x="965.0000000000001" y="104.0" />
-      <point x="821.6000000000001" y="104.0" />
-      <point x="25.600000000000023" y="37.0" />
-    </edge>
-    <edge source="Decorator.CondimentDecorator" target="Decorator.Beverage">
-      <point x="0.0" y="-25.5" />
-      <point x="484.0000000000001" y="94.0" />
-      <point x="744.8000000000001" y="94.0" />
-      <point x="-51.200000000000045" y="37.0" />
-    </edge>
-    <edge source="Decorator.Whip" target="Decorator.CondimentDecorator">
-      <point x="0.0" y="-60.0" />
-      <point x="854.5000000000001" y="218.0" />
-      <point x="545.5000000000001" y="218.0" />
+    <edge source="Structural.Decorator.Whip" target="Structural.Decorator.CondimentDecorator">
+      <point x="0.0" y="-48.5" />
+      <point x="722.0" y="218.0" />
+      <point x="463.25" y="218.0" />
       <point x="61.5" y="25.5" />
     </edge>
+    <edge source="Structural.Decorator.Milk" target="Structural.Decorator.CondimentDecorator">
+      <point x="0.0" y="-48.5" />
+      <point x="93.0" y="218.0" />
+      <point x="340.25" y="218.0" />
+      <point x="-61.5" y="25.5" />
+    </edge>
+    <edge source="Structural.Decorator.CondimentDecorator" target="Structural.Decorator.Beverage">
+      <point x="0.0" y="-25.5" />
+      <point x="401.75" y="94.0" />
+      <point x="672.55" y="94.0" />
+      <point x="-51.200000000000045" y="37.0" />
+    </edge>
+    <edge source="Structural.Decorator.HouseBlend" target="Structural.Decorator.Beverage">
+      <point x="0.0" y="-37.0" />
+      <point x="1051.75" y="94.0" />
+      <point x="774.95" y="94.0" />
+      <point x="51.200000000000045" y="37.0" />
+    </edge>
+    <edge source="Structural.Decorator.Mocha" target="Structural.Decorator.CondimentDecorator">
+      <point x="0.0" y="-48.5" />
+      <point x="507.0" y="228.0" />
+      <point x="422.25" y="228.0" />
+      <point x="20.5" y="25.5" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="606.5" y="232.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="565.5" y="220.5" />
+  <SelectedNodes>
+    <node>Structural.Decorator.CoffeeStore</node>
+  </SelectedNodes>
   <Categories>
     <Category>Constructors</Category>
     <Category>Methods</Category>
     <Category>Properties</Category>
-    <Category>Inner Classes</Category>
-    <Category>Fields</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
